@@ -3,11 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-inline void oom(uint64_t size)
-{
-	fprintf(stderr, "out of memory %lld\n", size);
-	exit(1);
-}
+#include "utils/Error.h"
 
 char init_blending(BlendContext** blend_ctx, BlendSettings* settings)
 {

@@ -3,11 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-inline void oom(uint64_t size)
-{
-    fprintf(stderr, "out of memory %lld\n", size);
-    exit(1);
-}
+#include "utils/Error.h"
 
 void* get_blend_function(int frame_type, int tmp_type)
 {

@@ -3,11 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-inline void oom(uint64_t size)
-{
-	fprintf(stderr, "out of memory %lld\n", size);
-	exit(1);
-}
+#include "utils/Error.h"
 
 int alloc_RGBFrame(RGBFrame** frame, uint64_t id, uint64_t width, uint64_t height, uint64_t data_size)
 {
