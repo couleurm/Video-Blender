@@ -1,0 +1,6 @@
+*.mp4
+out/*
+output/*
+build/out/*
+*test/*
+src/blendlib/blendingx86.obj
